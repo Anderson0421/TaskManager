@@ -32,18 +32,16 @@ export default function NewTask() {
         const formData = new FormData(e.target as HTMLFormElement);
         const task: Partial<TaskType> = Object.fromEntries(formData);
 
-        if (typeof task.id === "string") {
-            task.id = parseInt(task.id);
-        }
 
         task.isCompleted = false
+        task.isDelete = false
         addTaskMutation.mutate(task as TaskType)
     }
 
     return (
-        <div className="p-5">
+        <div className="p-4 max-sm:py-4 max-sm:px-0">
             <Dialog open={open}>
-                <DialogTrigger onClick={() => setOpen(!open)} className="w-52 px-5 py-2 rounded-lg bg-gray-900">
+                <DialogTrigger onClick={() => setOpen(!open)} className="w-52 py-2 rounded-lg bg-gray-900">
                     Crear nueva tarea +
                 </DialogTrigger>
                 <DialogContent>

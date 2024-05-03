@@ -1,35 +1,32 @@
 {
   "tasks": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Estudiar TanStack Query",
       "description": "Estudiar TansTack Query para el manejo de Peticiones HTTP",
-      "isCompleted": false
+      "isCompleted": false,
+      "isDelete": false
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Estudiar Zustand con React",
       "description": "Estudiar Zustand para el manejo del estado global en React",
-      "isCompleted": true
+      "isCompleted": true,
+      "isDelete": false
     },
     {
-      "id": 3,
-      "name": "Estudiar Ingles",
-      "description": "Estudiar ingles para mejorar y ser apto para propuestas de trabajo.",
-      "isCompleted": false
-    },
-    {
-      "id": 4,
+      "id": "4",
       "name": "Estudiar mas Typescript",
       "description": "Estudiar Typescript Avanzado que esta muy dificil este lenguaje",
-      "isCompleted": false,
+      "isCompleted": true,
       "isDelete": true
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Terminar la aplicación de Task Manager",
       "description": "Aplicando Typescript, React Query y Axios",
-      "isCompleted": false
+      "isCompleted": true,
+      "isDelete": false
     }
   ]
 }
